@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.auction_system.ClientHandler">
+    <children>
+        <Label layoutX="249.0" layoutY="14.0" prefHeight="35.0" prefWidth="75.0" text="Client">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="txtBidFeed" layoutX="34.0" layoutY="349.0" prefHeight="128.0" prefWidth="530.0" />
+        <TextField fx:id="txtBidAmount" layoutX="34.0" layoutY="546.0" onAction="#txtBidAmount" prefHeight="26.0" prefWidth="374.0" />
+        <Button fx:id="btnPlaceBid" layoutX="456.0" layoutY="544.0" mnemonicParsing="false" onAction="#btnPlaceBid" prefHeight="30.0" prefWidth="75.0" text="Place Bid">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+
+
+      <Label layoutX="34.0" layoutY="525.0" text="Bid Amount">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="329.0" text="Live Bid History Feed">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Pane layoutX="34.0" layoutY="207.0" prefHeight="105.0" prefWidth="522.0">
+         <children>
+            <Label layoutX="14.0" layoutY="5.0" text="Item Name" />
+            <TextField fx:id="txtItemName" layoutX="14.0" layoutY="22.0" onAction="#txtItemName" prefHeight="25.0" prefWidth="174.0" />
+
+            <Label layoutX="14.0" layoutY="53.0" text="Current Highest Bid" />
+            <Label fx:id="lblHighestbid" layoutX="14.0" layoutY="70.0" prefHeight="17.0" prefWidth="117.0" />
+         </children>
+      </Pane>
+      <Label layoutX="34.0" layoutY="183.0" text="Info Panel">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Pane layoutX="34.0" layoutY="95.0" prefHeight="72.0" prefWidth="512.0">
+         <children>
+            <TextField fx:id="txtUserName" layoutX="7.0" layoutY="24.0" onAction="#txtUserName" prefHeight="25.0" prefWidth="298.0" />
+            <Label layoutX="14.0" layoutY="6.0" text="Username" />
+            <Button fx:id="btnDisconnect" layoutX="360.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnDisconnect" text="Disconnect">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+
+    </children>
+</AnchorPane>
